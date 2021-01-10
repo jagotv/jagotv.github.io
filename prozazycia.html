@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+		<title>Tabela wyników Proza Życia Kivi</title>
+		<link rel="shortcut icon" type="image/jpg" href="images/kivi.jpg">
+		<meta name="Tabela z wynikami mocowymi oraz czasami z Prozy Życia Kiviego" content="Proza Życia Kivi">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="DataTables/datatables.css"/>
+		<script type="text/javascript" src="DataTables/datatables.js"></script>
+<style>
+#top {
+
+	width: 100%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	background-color: #959595;
+	
+  }
+#button {
+float: left;
+padding: 2px;
+
+}  
+</style>
+
+<script>
+   $(document).ready( function () {
+      $('#kivi').DataTable({
+        order: [[ 0, 'desc' ]],
+		paginate: false,
+		language: {
+    "processing":     "Przetwarzanie...",
+	"search":         "Szukaj:",
+	"lengthMenu":     "Pokaż _MENU_ pozycji",
+	"info":           "Pozycje od _START_ do _END_ z _TOTAL_ łącznie",
+	"infoEmpty":      "Pozycji 0 z 0 dostępnych",
+	"infoFiltered":   "(filtrowanie spośród _MAX_ dostępnych pozycji)",
+	"loadingRecords": "Wczytywanie...",
+	"zeroRecords":    "Nie znaleziono pasujących pozycji",
+	"emptyTable":     "Brak danych",
+    }
+});
+   });
+</script>
+</head>
+
+<body style="background-color:#d9d9d9;">
+<div id='top'>
+<div id='button'><a href='index.html'>Kod Coobcio</a></div><div id='button'><b>Proza Życia Kivi</b></div>
+</div>
+<br>
+<table id='kivi' class='display'>
+<thead>
+  <tr>
+    <th rowspan="2">#<br></th>
+    <th rowspan="2">Auto</th>
+    <th rowspan="2">Silnik</th>
+    <th colspan="4">Przed modyfikacjami</th>
+    <th colspan="4">Po modyfikacjach</th>
+  </tr>
+  <tr>
+    <td>Moc</td>
+    <td>0-100</td>
+    <td>100-150</td>
+    <td>100-200</td>
+    <td>Moc</td>
+    <td>0-100</td>
+    <td>100-150</td>
+    <td>100-200</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>20</td>
+    <td>Volvo XC90</td>
+    <td>2.0 T6</td>
+    <td>328KM/440NM</td>
+    <td></td>
+    <td>8.45</td>
+    <td>26.28</td>
+    <td>345KM/510NM</td>
+    <td></td>
+    <td>7.02</td>
+    <td>19.06</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Honda Civic Type R</td>
+    <td>2.0 i-VTEC Turbo</td>
+    <td>327KM/461NM</td>
+    <td></td>
+    <td>4.92</td>
+    <td>13.02</td>
+    <td>387KM/559NM</td>
+    <td></td>
+    <td>4</td>
+    <td>10.96</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>VW Arteon</td>
+    <td>2.0 TSI (DJHC)</td>
+    <td>320KM/408NM</td>
+    <td>5.4</td>
+    <td>6.11</td>
+    <td>16.44</td>
+    <td>393KM/531NM</td>
+    <td>4.6</td>
+    <td>4.8</td>
+    <td>12.75</td>
+  </tr>
+    <tr>
+    <td>17</td>
+    <td>Audi A4 B8 Quattro</td>
+    <td>2.0 TFSI</td>
+    <td>227KM/363NM</td>
+    <td>8,2</td>
+    <td></td>
+    <td></td>
+    <td>227KM/363NM</td>
+    <td>6,6</td>
+    <td></td>
+    <td>20.2</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Jeep Grand Cherokee</td>
+    <td>3.0 V6 CRD</td>
+    <td>250KM/526NM</td>
+    <td></td>
+    <td>10.76</td>
+    <td></td>
+    <td>284KM/633NM</td>
+    <td>7.46</td>
+    <td>9.44</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Renault Scenic mk3</td>
+    <td>2.0 dCi</td>
+    <td>142KM/358NM</td>
+    <td></td>
+    <td>16.7</td>
+    <td></td>
+    <td>197KM/412NM</td>
+    <td></td>
+    <td>12.53</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Skoda Superb L&amp;K</td>
+    <td>2.0 TSI</td>
+    <td>304KM/405NM</td>
+    <td></td>
+    <td></td>
+    <td>17.9</td>
+    <td>342KM/496NM</td>
+    <td>5.9</td>
+    <td></td>
+    <td>14.2</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>VW Up!</td>
+    <td>1.0 MPI</td>
+    <td>72KM/106NM</td>
+    <td></td>
+    <td>25.2</td>
+    <td></td>
+    <td>90KM/111NM</td>
+    <td></td>
+    <td>19</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>BMW E60 520D</td>
+    <td>2.0D</td>
+    <td>170KM/357NM</td>
+    <td></td>
+    <td>11.1</td>
+    <td></td>
+    <td>217KM/~440NM</td>
+    <td>9.1</td>
+    <td>7.9</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Skoda Octavia 2017r. L&amp;K</td>
+    <td>2.0 TDI</td>
+    <td>175KM/410NM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>351KM/~443NM</td>
+    <td>5.9</td>
+    <td>5.1</td>
+    <td>15.1</td>
+  </tr>
+    <tr>
+    <td>10</td>
+    <td>Renault Megane mk4</td>
+    <td>1.2 TCe</td>
+    <td>121KM/217NM</td>
+    <td></td>
+    <td>13.1</td>
+    <td></td>
+    <td>148KM/266NM</td>
+    <td>10.7</td>
+    <td>12.3</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Renault Clio RS mk4</td>
+    <td>1.6 TCe</td>
+    <td>210KM/283NM</td>
+    <td></td>
+    <td>7.3</td>
+    <td>21.9</td>
+    <td>225KM/350NM</td>
+    <td></td>
+    <td>6.6</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Skoda Kodiaq RS 2020r.</td>
+    <td>2.0 TSI (CUAA)</td>
+    <td>274KM/577NM</td>
+    <td>7.87</td>
+    <td>8.14</td>
+    <td>24.85</td>
+    <td>333KM/684NM</td>
+    <td>6.34</td>
+    <td>6.45</td>
+    <td>19.46</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Mercedes A160 W176</td>
+    <td>1.6T</td>
+    <td>152KM/260NM</td>
+    <td></td>
+    <td>9.73</td>
+    <td></td>
+    <td>173KM/310NM</td>
+    <td>9,42</td>
+    <td>8.92</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Kia Stinger</td>
+    <td>2.0T</td>
+    <td>215KM/329NM</td>
+    <td>7.8</td>
+    <td></td>
+    <td>19.8</td>
+    <td>272KM/484NM</td>
+    <td>7.92</td>
+    <td>7.39</td>
+    <td>18.48</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Skoda Octavia 2019r.</td>
+    <td>1.6 TDI</td>
+    <td>135KM/300NM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>155KM/335NM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Renault Megane RS mk3</td>
+    <td>2.0T</td>
+    <td>472KM/555NM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>508KM/606NM</td>
+    <td></td>
+    <td></td>
+    <td>12.1</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Renault Talisman</td>
+    <td>1.6 TCE</td>
+    <td>161KM/234NM</td>
+    <td></td>
+    <td>13.4</td>
+    <td></td>
+    <td>221KM/340NM</td>
+    <td></td>
+    <td>9.4</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Skoda Octavia</td>
+    <td>1.6 TDI</td>
+    <td>113KM/277NM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>160KM/352NM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Hyundai i30N</td>
+    <td>2.0T</td>
+    <td>265KM/441NM</td>
+    <td></td>
+    <td></td>
+    <td>18.54</td>
+    <td>294KM/554NM</td>
+    <td></td>
+    <td></td>
+    <td>15.91</td>
+  </tr>
+</tbody>
+</table>
+</body>
+</html>

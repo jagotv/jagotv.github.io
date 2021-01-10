@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tabela wyników Kod Coobcio</title>
+<link rel="shortcut icon" type="image/jpg" href="images/coobcio.jpg">
+<meta name="Tabela z czasami aut prezentowanych w serii Kod Coobcio" content="Kod Coobcio">
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="DataTables/datatables.css"/>
+<script type="text/javascript" src="DataTables/datatables.js"></script>
+
+<style>
+#top {
+
+	width: 100%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	background-color: #959595;
+	
+  }
+#button {
+float: left;
+padding: 2px;
+
+}  
+</style>
+
+<script>
+   $(document).ready( function () {
+      $('#coobcio').DataTable({
+	    order: [[ 0, 'desc' ]],
+        paginate: false,
+		language: {
+    "processing":     "Przetwarzanie...",
+	"search":         "Szukaj:",
+	"lengthMenu":     "Pokaż _MENU_ pozycji",
+	"info":           "Pozycje od _START_ do _END_ z _TOTAL_ łącznie",
+	"infoEmpty":      "Pozycji 0 z 0 dostępnych",
+	"infoFiltered":   "(filtrowanie spośród _MAX_ dostępnych pozycji)",
+	"loadingRecords": "Wczytywanie...",
+	"zeroRecords":    "Nie znaleziono pasujących pozycji",
+	"emptyTable":     "Brak danych",
+    }
+      });
+   });
+</script>
+</head>
+
+<body style="background-color:#d9d9d9">
+<div id='top'>
+<div id='button'><b>Kod Coobcio</b></div><div id='button'><a href='prozazycia.html'>Proza Życia Kivi</a></div>
+</div>
+<br>
+<table id='coobcio' class='display'>
+<thead>
+  <tr>
+    <th>#</th>
+    <th>Auto</th>
+    <th>Silnik</th>
+    <th>Moc</th>
+    <th>0-100</th>
+    <th>100-150</th>
+    <th>100-200</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>18</td>
+	<td>Ford Fiesta ST mk7</td>
+    <td>1.6 EcoBoost</td>
+    <td>182KM/290NM</td>
+    <td>7.70</td>
+    <td>7.49</td>
+    <td>25.91</td>
+  </tr>
+  <tr>
+    <td>17</td>
+	<td>Mercedes G Klasa 2006r Brabus</td>
+    <td>5.0</td>
+    <td>296KM/456NM</td>
+    <td>8.39</td>
+    <td>9.93</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16</td>
+	<td>Range Rover Vogue 2013</td>
+    <td>3.0 TDV6</td>
+    <td>258KM/600NM</td>
+    <td>9.22</td>
+    <td>10.55</td>
+    <td>38.25</td>
+  </tr>
+  <tr>
+    <td>15</td>
+	<td>BMW E91 335xi</td>
+    <td>3.0i Biturbo</td>
+    <td>306KM/400NM</td>
+    <td>5.83</td>
+    <td></td>
+    <td>17.57</td>
+  </tr>
+  <tr>
+    <td>14</td>
+	<td>Audi A7 4G Q</td>
+    <td>3.0 TFSI</td>
+    <td>310KM/440NM</td>
+    <td>5.84</td>
+    <td></td>
+    <td>17.56</td>
+  </tr>
+  <tr>
+    <td>13</td>
+	<td>Mercedes W123 280E 1977r.</td>
+    <td>2.8</td>
+    <td>185KM/240NM</td>
+    <td>12.7</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12</td>
+	<td>BMW M2</td>
+    <td>3.0T</td>
+    <td>370KM/465NM</td>
+    <td>4.91</td>
+    <td></td>
+    <td>11.96</td>
+  </tr>
+  <tr>
+    <td>11</td>
+	<td>Ford Focus RS mk1 Bemani</td>
+    <td>2.3T</td>
+    <td>264KM/392NM</td>
+    <td>6.7</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10</td>
+	<td>Tesla Model S 100D</td>
+    <td></td>
+    <td></td>
+    <td>4.4</td>
+    <td></td>
+    <td>14.5</td>
+  </tr>
+  <tr>
+    <td>9</td>
+	<td>Mercedes E500 W212</td>
+    <td>5.5</td>
+    <td>388KM/530NM</td>
+    <td>4.9</td>
+    <td></td>
+    <td>11.46</td>
+  </tr>
+  <tr>
+    <td>8</td>
+	<td>Mercedes E500 W211 2005r.</td>
+    <td>5.0</td>
+    <td>306KM/420NM</td>
+    <td>5.6</td>
+    <td></td>
+    <td>17.7</td>
+  </tr>
+  <tr>
+    <td>7</td>
+	<td>Mini Cooper S (2004)</td>
+    <td>1.6</td>
+    <td>170KM/220NM</td>
+    <td>7.5</td>
+    <td></td>
+    <td>29.6</td>
+  </tr>
+  <tr>
+    <td>6</td>
+	<td>Audi A4 B8 </td>
+    <td>2.0 TFSI</td>
+    <td>211KM/350NM</td>
+    <td>8.2</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+	<td>BMW E61 530D</td>
+    <td>3.0D</td>
+    <td>218KM/500NM</td>
+    <td>8.6</td>
+    <td></td>
+    <td>27.8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+	<td>BMW E92 335xi</td>
+    <td>3.0i </td>
+    <td>306KM/400NM</td>
+    <td>5.7</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+	<td>Opel Insignia 4x4</td>
+    <td>2.0T</td>
+    <td>220KM/350NM</td>
+    <td>8.5</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+	<td>Seat Leon Cupra mk2</td>
+    <td>2.0T</td>
+    <td>240KM/300NM</td>
+    <td>7.1</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Renault Megane RS mk3</td>
+    <td>2.0T</td>
+    <td>265KM/360NM</td>
+    <td>6.7</td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+</body>
+</html>
